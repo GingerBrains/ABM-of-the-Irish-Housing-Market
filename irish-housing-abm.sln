@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "irish-housing-abm", "irish-housing-abm\irish-housing-abm.csproj", "{A1F44667-1A6B-443A-8F19-D01C4C4757AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1F44667-1A6B-443A-8F19-D01C4C4757AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1F44667-1A6B-443A-8F19-D01C4C4757AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1F44667-1A6B-443A-8F19-D01C4C4757AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1F44667-1A6B-443A-8F19-D01C4C4757AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7036F4D-0044-4FF1-950B-E1521FE11A96}
+	EndGlobalSection
+EndGlobal
