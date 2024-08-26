@@ -20,6 +20,7 @@
 
         private static int GetAgeGroup(int age)
         {
+            if (age >= 0 && age <= 14) return 0;
             if (age >= 15 && age <= 24) return 15;
             if (age >= 25 && age <= 29) return 25;
             if (age >= 30 && age <= 39) return 30;

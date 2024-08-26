@@ -2,36 +2,47 @@
 {
     public class Household
     {
-        public int Age { get; set; }
-        public int Size { get; set; }
-        public double Income { get; set; }
+        public int Id { get; private set; }
+        public List<Person> Members { get; private set; }
         public double Wealth { get; set; }
         public int WaitlistTime { get; set; }
         public HousingContract Contract { get; set; }
         public bool WantToMove { get; set; }
-
-        // Mortgage details
         public double LoanAmount { get; set; }
         public int LoanTermYears { get; set; }
+        public int? IncomePercentile { get; set; }
 
-        public Household(int age, int size, int incomePercentile, double income, double wealth, HousingContract contract)
+
+        public Household(int id, List<Person> members, int incomePercentile, double wealth, HousingContract contract)
         {
-            Age = age;
-            Size = size;
-            Income = income;
+            Id = id;
+            Members = members;
+            IncomePercentile = incomePercentile;
             Wealth = wealth;
-            WaitlistTime = 0;
             Contract = contract;
+            WaitlistTime = 0;
             WantToMove = false;
-
-            // Default mortgage details
             LoanAmount = 0;
             LoanTermYears = 0;
         }
 
-        public void UpdateIncome(double newIncome)
+        public int Size => Members.Count;
+        public double TotalIncome => Members.Sum(m => m.Income);
+
+        public void UpdateMemberAges()
         {
-            Income = newIncome;
+            foreach (var member in Members)
+            {
+                member.IncrementAge();
+            }
+        }
+
+        public void UpdateMemberIncomes()
+        {
+            foreach (var member in Members)
+            {
+                member.UpdateIncome(IncomeCalculator.GetIncome(member.Age, member.Gender));
+            }
         }
 
         public void UpdateWealth(double amount)
@@ -44,27 +55,39 @@
             WaitlistTime++;
         }
 
+        public void UpdateContract(double monthlyMortgagePayment)
+        {
+            if (Contract != null)
+            {
+                Contract.UpdateContract(monthlyMortgagePayment);
+                if (Contract.Type == ContractType.OwnerOccupiedWithoutLoan)
+                {
+                    LoanAmount = 0;
+                    LoanTermYears = 0;
+                }
+            }
+        }
+
         public void DecideToMove()
         {
-            // Implement logic to decide whether the household wants to move
-            WantToMove = RandomNumberGenerator.NextDouble() > 0.5; // Example logic
+            // Implement logic 
+
         }
-    }
 
-    public class HousingContract
-    {
-        public ContractType Type { get; set; }
-
-        public HousingContract(ContractType type)
+        public bool IsInterestedInSocialHousing()
         {
-            Type = type;
+            // This is a simple implementation. 
+            return Contract == null && TotalIncome < 30000; // income threshold
+        }
+
+
+        public void ResetWaitlistTime()
+        {
+            WaitlistTime = 0;
         }
     }
 
-    public enum ContractType
-    {
-        Buying,
-        Rental,
-        SocialRental
-    }
+    
+
+
 }

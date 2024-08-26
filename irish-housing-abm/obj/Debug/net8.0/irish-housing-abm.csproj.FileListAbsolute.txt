@@ -1,0 +1,5 @@
+C:\Users\Laurel\source\repos\irish-housing-abm\irish-housing-abm\obj\Debug\net8.0\irish-housing-abm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laurel\source\repos\irish-housing-abm\irish-housing-abm\obj\Debug\net8.0\irish-housing-abm.AssemblyInfoInputs.cache
+C:\Users\Laurel\source\repos\irish-housing-abm\irish-housing-abm\obj\Debug\net8.0\irish-housing-abm.AssemblyInfo.cs
+C:\Users\Laurel\source\repos\irish-housing-abm\irish-housing-abm\obj\Debug\net8.0\irish-housing-abm.csproj.CoreCompileInputs.cache
+C:\Users\Laurel\source\repos\irish-housing-abm\irish-housing-abm\obj\Debug\net8.0\irish-housing-abm.sourcelink.json

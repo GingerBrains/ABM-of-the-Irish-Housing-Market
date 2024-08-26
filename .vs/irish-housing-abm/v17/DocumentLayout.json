@@ -3,16 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|c:\\users\\laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\constructioncompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|solutionrelative:irish-housing-abm\\constructioncompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|c:\\users\\laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\simulationupdater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|solutionrelative:irish-housing-abm\\simulationupdater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|c:\\users\\laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\rng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|solutionrelative:irish-housing-abm\\rng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|c:\\users\\laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|solutionrelative:irish-housing-abm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|c:\\users\\laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|solutionrelative:irish-housing-abm\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|c:\\users\\laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\incomedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|solutionrelative:irish-housing-abm\\incomedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|c:\\users\\laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\incomecalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|solutionrelative:irish-housing-abm\\incomecalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|c:\\users\\laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\housingcontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|solutionrelative:irish-housing-abm\\housingcontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|c:\\users\\laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\householdgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|solutionrelative:irish-housing-abm\\householdgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|c:\\users\\laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\householddatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|solutionrelative:irish-housing-abm\\householddatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|c:\\users\\laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\household.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|solutionrelative:irish-housing-abm\\household.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|c:\\users\\laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|solutionrelative:irish-housing-abm\\house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|c:\\users\\laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|solutionrelative:irish-housing-abm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|c:\\users\\laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\constructioncompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|solutionrelative:irish-housing-abm\\constructioncompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A1F44667-1A6B-443A-8F19-D01C4C4757AA}|irish-housing-abm\\irish-housing-abm.csproj|c:\\users\\laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,41 +70,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ConstructionCompany.cs",
-              "DocumentMoniker": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\ConstructionCompany.cs",
-              "RelativeDocumentMoniker": "irish-housing-abm\\ConstructionCompany.cs",
-              "ToolTip": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\ConstructionCompany.cs",
-              "RelativeToolTip": "irish-housing-abm\\ConstructionCompany.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAdAAAA",
+              "DocumentIndex": 5,
+              "Title": "IncomeCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\IncomeCalculator.cs",
+              "RelativeDocumentMoniker": "irish-housing-abm\\IncomeCalculator.cs",
+              "ToolTip": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\IncomeCalculator.cs",
+              "RelativeToolTip": "irish-housing-abm\\IncomeCalculator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T20:18:16.263Z",
+              "WhenOpened": "2024-08-26T11:09:40.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HouseholdGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\HouseholdGenerator.cs",
+              "RelativeDocumentMoniker": "irish-housing-abm\\HouseholdGenerator.cs",
+              "ToolTip": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\HouseholdGenerator.cs",
+              "RelativeToolTip": "irish-housing-abm\\HouseholdGenerator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T11:09:35.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IncomeData.cs",
+              "DocumentMoniker": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\IncomeData.cs",
+              "RelativeDocumentMoniker": "irish-housing-abm\\IncomeData.cs",
+              "ToolTip": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\IncomeData.cs",
+              "RelativeToolTip": "irish-housing-abm\\IncomeData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T15:07:46.636Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Bank.cs",
-              "DocumentMoniker": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\Bank.cs",
-              "RelativeDocumentMoniker": "irish-housing-abm\\Bank.cs",
-              "ToolTip": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\Bank.cs",
-              "RelativeToolTip": "irish-housing-abm\\Bank.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA4AAAA",
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\Person.cs",
+              "RelativeDocumentMoniker": "irish-housing-abm\\Person.cs",
+              "ToolTip": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\Person.cs",
+              "RelativeToolTip": "irish-housing-abm\\Person.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T20:15:50.029Z",
+              "WhenOpened": "2024-08-19T10:06:49.601Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "House.cs",
-              "DocumentMoniker": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\House.cs",
-              "RelativeDocumentMoniker": "irish-housing-abm\\House.cs",
-              "ToolTip": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\House.cs",
-              "RelativeToolTip": "irish-housing-abm\\House.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAATAAAA",
+              "DocumentIndex": 9,
+              "Title": "Household.cs",
+              "DocumentMoniker": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\Household.cs",
+              "RelativeDocumentMoniker": "irish-housing-abm\\Household.cs",
+              "ToolTip": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\Household.cs",
+              "RelativeToolTip": "irish-housing-abm\\Household.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAqwEkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T20:12:13.854Z",
+              "WhenOpened": "2024-08-19T09:54:41.652Z",
               "EditorCaption": ""
             },
             {
@@ -79,9 +141,100 @@
               "RelativeDocumentMoniker": "irish-housing-abm\\Program.cs",
               "ToolTip": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\Program.cs",
               "RelativeToolTip": "irish-housing-abm\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAbAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-30T20:09:42.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RNG.cs",
+              "DocumentMoniker": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\RNG.cs",
+              "RelativeDocumentMoniker": "irish-housing-abm\\RNG.cs",
+              "ToolTip": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\RNG.cs",
+              "RelativeToolTip": "irish-housing-abm\\RNG.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T09:49:33.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SimulationUpdater.cs",
+              "DocumentMoniker": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\SimulationUpdater.cs",
+              "RelativeDocumentMoniker": "irish-housing-abm\\SimulationUpdater.cs",
+              "ToolTip": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\SimulationUpdater.cs",
+              "RelativeToolTip": "irish-housing-abm\\SimulationUpdater.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T09:35:51.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "House.cs",
+              "DocumentMoniker": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\House.cs",
+              "RelativeDocumentMoniker": "irish-housing-abm\\House.cs",
+              "ToolTip": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\House.cs",
+              "RelativeToolTip": "irish-housing-abm\\House.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAADwvy4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T09:36:04.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ConstructionCompany.cs",
+              "DocumentMoniker": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\ConstructionCompany.cs",
+              "RelativeDocumentMoniker": "irish-housing-abm\\ConstructionCompany.cs",
+              "ToolTip": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\ConstructionCompany.cs",
+              "RelativeToolTip": "irish-housing-abm\\ConstructionCompany.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAqwEQAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T09:39:04.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Bank.cs",
+              "DocumentMoniker": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\Bank.cs",
+              "RelativeDocumentMoniker": "irish-housing-abm\\Bank.cs",
+              "ToolTip": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\Bank.cs",
+              "RelativeToolTip": "irish-housing-abm\\Bank.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T11:09:31.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HousingContract.cs",
+              "DocumentMoniker": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\HousingContract.cs",
+              "RelativeDocumentMoniker": "irish-housing-abm\\HousingContract.cs",
+              "ToolTip": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\HousingContract.cs",
+              "RelativeToolTip": "irish-housing-abm\\HousingContract.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T10:09:44.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HouseholdDataStore.cs",
+              "DocumentMoniker": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\HouseholdDataStore.cs",
+              "RelativeDocumentMoniker": "irish-housing-abm\\HouseholdDataStore.cs",
+              "ToolTip": "C:\\Users\\Laurel\\source\\repos\\irish-housing-abm\\irish-housing-abm\\HouseholdDataStore.cs",
+              "RelativeToolTip": "irish-housing-abm\\HouseholdDataStore.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAA1wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T15:07:54.8Z",
               "EditorCaption": ""
             }
           ]
