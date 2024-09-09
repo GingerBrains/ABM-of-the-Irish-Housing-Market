@@ -17,7 +17,7 @@ namespace irish_housing_abm
 
         public void ConstructNewHouses(List<House> houses, List<Household> households)
         {
-            int scaledHouseCount = (int)(BaseAnnualNewHouseCount * scaleFactor);
+            int scaledHouseCount = (int)(BaseAnnualNewHouseCount / scaleFactor);
             for (int i = 0; i < scaledHouseCount; i++)
             {
                 double size = DrawSizeFromDistribution();

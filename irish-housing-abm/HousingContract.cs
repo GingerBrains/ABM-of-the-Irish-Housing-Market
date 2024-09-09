@@ -3,13 +3,15 @@
     public class HousingContract
     {
         public ContractType Type { get; set; }
-        public int RunTimeMonths { get; private set; }
-        public double RemainingMortgage { get; private set; }
-        public double MonthlyCost { get; private set; }
+        public int RunTimeMonths { get;  set; }
+        public double RemainingMortgage { get;  set; }
+        public double MonthlyCost { get;  set; }
+        public House House { get; set; }
 
-        public HousingContract(ContractType type, double initialMortgage = 0, double monthlyCost = 0)
+        public HousingContract(ContractType type, House house = null, double initialMortgage = 0, double monthlyCost = 0)
         {
             Type = type;
+            House = house;
             RunTimeMonths = 0;
             RemainingMortgage = initialMortgage;
             MonthlyCost = monthlyCost;
@@ -28,6 +30,11 @@
                     Type = ContractType.OwnerOccupiedWithoutLoan;
                 }
             }
+        }
+
+        public void ResetRuntime()
+        {
+            RunTimeMonths = 0;
         }
     }
 

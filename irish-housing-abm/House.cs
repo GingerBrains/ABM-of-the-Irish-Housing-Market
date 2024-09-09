@@ -2,8 +2,8 @@
 {
     public class House
     {
-        public double Size { get; private set; } // square meters
-        public int Quality { get; private set; } // from 0 to 10
+        public double Size { get; private set; }
+        public int Quality { get; private set; }
         public HouseType Type { get; private set; }
         public Household Owner { get; private set; }
         public double Price { get; private set; }

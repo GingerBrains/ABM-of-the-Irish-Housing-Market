@@ -1,10 +1,13 @@
-﻿namespace irish_housing_abm
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace irish_housing_abm
 {
     public class Household
     {
         public int Id { get; private set; }
         public List<Person> Members { get; private set; }
-        public double Wealth { get; set; }
         public int WaitlistTime { get; set; }
         public HousingContract Contract { get; set; }
         public bool WantToMove { get; set; }
@@ -12,13 +15,11 @@
         public int LoanTermYears { get; set; }
         public int? IncomePercentile { get; set; }
 
-
-        public Household(int id, List<Person> members, int incomePercentile, double wealth, HousingContract contract)
+        public Household(int id, List<Person> members, int incomePercentile, HousingContract contract)
         {
             Id = id;
             Members = members;
             IncomePercentile = incomePercentile;
-            Wealth = wealth;
             Contract = contract;
             WaitlistTime = 0;
             WantToMove = false;
@@ -45,11 +46,6 @@
             }
         }
 
-        public void UpdateWealth(double amount)
-        {
-            Wealth += amount;
-        }
-
         public void IncrementWaitlistTime()
         {
             WaitlistTime++;
@@ -68,26 +64,73 @@
             }
         }
 
-        public void DecideToMove()
+        public void DecideToMove(List<House> suitableHouses, double baseMovementCost, Func<Household, House, bool> canAffordHouseFunc, Func<double, int, double, double> calculateMonthlyPaymentFunc)
         {
-            // Implement logic 
+            House currentHouse = this.Contract?.House;
+            double currentUtility = CalculateUtility(currentHouse, 0);
 
+            double bestUtility = currentUtility;
+            House bestHouse = null;
+
+            foreach (var house in suitableHouses)
+            {
+                if (canAffordHouseFunc(this, house))
+                {
+                    double movementCost = CalculateMovementCost(baseMovementCost, currentHouse, house);
+                    double utility = CalculateUtility(house, movementCost);
+
+                    if (utility > bestUtility)
+                    {
+                        bestUtility = utility;
+                        bestHouse = house;
+                    }
+                }
+            }
+
+            WantToMove = (bestUtility - currentUtility) > 0.1; // Utility threshold
+        }
+
+        private double CalculateUtility(House house, double movementCost)
+        {
+            if (house == null)
+            {
+                return -10 + RandomNumberGenerator.NextGaussian(0, 2);
+            }
+
+            double spacePerPerson = house.Size / this.Size;
+            double incomeRatio = house.Price / (TotalIncome * 5); // 5 years of income
+
+            double deterministic = 0.2 * spacePerPerson * house.Quality - movementCost - incomeRatio;
+            double stochastic = RandomNumberGenerator.NextGaussian(0, 2);
+
+            return deterministic + stochastic;
+        }
+
+        private double CalculateMovementCost(double baseMovementCost, House currentHouse, House newHouse)
+        {
+            double cost = baseMovementCost;
+
+            if (currentHouse != null && Contract != null)
+            {
+                cost *= Math.Max(0, 1 - (Contract.RunTimeMonths / 120.0));
+            }
+
+            if (currentHouse != null && currentHouse.Type != newHouse.Type)
+            {
+                cost *= 1.5;
+            }
+
+            return cost;
         }
 
         public bool IsInterestedInSocialHousing()
         {
-            // This is a simple implementation. 
-            return Contract == null && TotalIncome < 30000; // income threshold
+            return Contract == null && TotalIncome < 30000;
         }
-
 
         public void ResetWaitlistTime()
         {
             WaitlistTime = 0;
         }
     }
-
-    
-
-
 }

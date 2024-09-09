@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("irish-housing-abm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbfcdbf7dcf1c2b98170f7b151f0f84a65bdc696")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df67a24acfabfb8350e2c2c9e2133163f7d0cb5e")]
 [assembly: System.Reflection.AssemblyProductAttribute("irish-housing-abm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("irish-housing-abm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

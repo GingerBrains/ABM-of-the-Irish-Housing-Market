@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace irish_housing_abm
+﻿namespace irish_housing_abm
 {
     public class Bank
     {
@@ -32,13 +29,9 @@ namespace irish_housing_abm
             if (loanToValueRatio > MaxLoanToValueRatio)
                 return false;
 
-            if (household.TotalIncome < MaxDebtToIncomeRatio * monthlyPayment)
+            if (household.TotalIncome < MaxDebtToIncomeRatio * monthlyPayment * 12)
                 return false;
 
-            if (household.Wealth < downPayment)
-                return false;
-
-            household.UpdateWealth(-downPayment);
             household.LoanAmount = loanAmount;
             household.LoanTermYears = loanTermYears;
             MortgagedHouseholds.Add(household);
@@ -52,12 +45,11 @@ namespace irish_housing_abm
             foreach (var household in MortgagedHouseholds)
             {
                 double monthlyPayment = CalculateMonthlyPayment(household.LoanAmount, household.LoanTermYears, InterestRate);
-                double interestPayment = household.LoanAmount * (InterestRate / 12 / 100);
+                double interestPayment = household.LoanAmount * (InterestRate / 12);
                 double principalPayment = monthlyPayment - interestPayment;
 
-                if (household.Wealth >= monthlyPayment)
+                if (household.TotalIncome / 12 >= monthlyPayment)
                 {
-                    household.UpdateWealth(-monthlyPayment);
                     household.LoanAmount -= principalPayment;
 
                     if (household.LoanAmount <= 0)
@@ -84,7 +76,7 @@ namespace irish_housing_abm
         public double CalculateMonthlyPayment(double loanAmount, int loanTermYears, double interestRate)
         {
             int n = loanTermYears * 12;
-            double r = interestRate / 12 / 100;
+            double r = interestRate / 12;
             return (loanAmount * r * Math.Pow(1 + r, n)) / (Math.Pow(1 + r, n) - 1);
         }
     }
