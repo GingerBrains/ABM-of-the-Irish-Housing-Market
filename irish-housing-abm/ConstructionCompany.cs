@@ -1,30 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace irish_housing_abm
 {
     public class ConstructionCompany
     {
-        private const int BaseAnnualNewHouseCount = 20000;
+        private const int AnnualNewHouseCount = 20000;
         private readonly double scaleFactor;
         public const double MinimumAreaPerPerson = 20.0;
         public event EventHandler<HouseEventArgs> HouseConstructed;
 
         public ConstructionCompany(double scaleFactor)
         {
+            if (scaleFactor <= 0)
+                throw new ArgumentException("Scale factor must be positive.", nameof(scaleFactor));
             this.scaleFactor = scaleFactor;
         }
 
         public void ConstructNewHouses(List<House> houses, List<Household> households)
         {
-            int scaledHouseCount = (int)(BaseAnnualNewHouseCount / scaleFactor);
+            int scaledHouseCount = (int)Math.Round(AnnualNewHouseCount / scaleFactor);
+
+            Console.WriteLine($"Constructing {scaledHouseCount} new houses this year.");
+
             for (int i = 0; i < scaledHouseCount; i++)
             {
                 double size = DrawSizeFromDistribution();
                 int quality = DrawQualityFromDistribution();
                 HouseType type = DetermineHouseType();
                 double initialPrice = CalculateInitialPrice(size, quality, type);
-
                 var newHouse = new House(size, quality, type, initialPrice);
                 if (HouseIsSuitableForMarket(newHouse, households))
                 {
@@ -63,10 +68,9 @@ namespace irish_housing_abm
 
         private double CalculateInitialPrice(double size, int quality, HouseType type)
         {
-            
-            double basePrice = size * 2000; 
-            double qualityMultiplier = 0.5 + (quality * 0.1); 
-            double typeMultiplier = type == HouseType.Buy ? 1.2 : 1.0; 
+            double basePrice = size * 2000;
+            double qualityMultiplier = 0.5 + (quality * 0.1);
+            double typeMultiplier = type == HouseType.Buy ? 1.2 : 1.0;
 
             return basePrice * qualityMultiplier * typeMultiplier;
         }
@@ -82,7 +86,7 @@ namespace irish_housing_abm
         public House ConstructedHouse { get; }
         public HouseEventArgs(House house)
         {
-            ConstructedHouse = house;
+            ConstructedHouse = house ?? throw new ArgumentNullException(nameof(house));
         }
     }
 }

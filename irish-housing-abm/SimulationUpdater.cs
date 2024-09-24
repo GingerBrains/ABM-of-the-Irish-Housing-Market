@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace irish_housing_abm
+namespace irish_housing_abm 
 {
     public class SimulationUpdater
     {
@@ -12,9 +12,9 @@ namespace irish_housing_abm
 
         public SimulationUpdater(Bank bank, ConstructionCompany constructionCompany, PopulationModel populationModel)
         {
-            this.bank = bank;
-            this.constructionCompany = constructionCompany;
-            this.populationModel = populationModel;
+            this.bank = bank ?? throw new ArgumentNullException(nameof(bank));
+            this.constructionCompany = constructionCompany ?? throw new ArgumentNullException(nameof(constructionCompany));
+            this.populationModel = populationModel ?? throw new ArgumentNullException(nameof(populationModel));
         }
 
         public void PerformMonthlyUpdates(List<Household> households, List<House> houses)
@@ -44,7 +44,7 @@ namespace irish_housing_abm
             Console.WriteLine("    Setting tax rate");
             SetTaxRate(households, ref taxRate);
             Console.WriteLine("    Constructing new houses");
-            ConstructNewHouses(houses, households);
+            constructionCompany.ConstructNewHouses(houses, households);
         }
 
         private void UpdateHousePrices(List<House> houses)
@@ -95,9 +95,9 @@ namespace irish_housing_abm
                 householdsConsidered++;
                 if (household.WantToMove) householdsWantingToMove++;
 
-                if (householdsConsidered % 1000 == 0 || householdsConsidered == households.Count)
+                if (householdsConsidered % 10000 == 0 || householdsConsidered == households.Count)
                 {
-                    Console.WriteLine($"        Processed {householdsConsidered}/{households.Count} households. {householdsWantingToMove} want to move.");
+                    //Console.WriteLine($"        Processed {householdsConsidered}/{households.Count} households. {householdsWantingToMove} want to move.");
                 }
             }
             Console.WriteLine("    Completed DecideToMove");
@@ -125,8 +125,14 @@ namespace irish_housing_abm
 
         private bool CanAffordHouse(Household household, House house)
         {
+            const double MaxMonthlyIncomePercentage = 0.3; // 30% of monthly income for housing
+            const int MonthsPerYear = 12;
+
             double monthlyPayment = bank.CalculateMonthlyPayment(house.Price, 30, bank.InterestRate);
-            return monthlyPayment <= household.TotalIncome * 0.3 / 12; // 30% of monthly income
+            double monthlyIncome = household.TotalIncome / MonthsPerYear;
+            double maxAllowablePayment = monthlyIncome * MaxMonthlyIncomePercentage;
+
+            return monthlyPayment <= maxAllowablePayment;
         }
 
         private void AssignSocialHousing(List<Household> households, List<House> houses)

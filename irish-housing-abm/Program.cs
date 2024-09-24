@@ -10,8 +10,8 @@ namespace irish_housing_abm
             Console.WriteLine("Starting Irish Housing ABM Simulation");
 
             // Configuration
-            int years = 10; // Run for 10 years
-            double scaleFactor = 100; // 1 simulated household represents 5000 real households
+            int years = 12; // Run for 10 years
+            double scaleFactor = 100; // 1 simulated household represents 100 real households
 
             string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             string outputPath = Path.Combine(desktopPath, "SimulationResults.xlsx");

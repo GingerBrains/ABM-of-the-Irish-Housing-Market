@@ -87,7 +87,14 @@ namespace irish_housing_abm
                 }
             }
 
-            WantToMove = (bestUtility - currentUtility) > 0.1; // Utility threshold
+            // Calculate the percentage improvement in utility
+            double percentageImprovement = (bestUtility - currentUtility) / currentUtility;
+
+            // Calculate a probability of moving based on the percentage improvement
+            double moveProbability = Math.Min(1, percentageImprovement * 3); // Adjust the multiplier as needed
+
+            // Decide to move based on the calculated probability
+            WantToMove = RandomNumberGenerator.NextDouble() < moveProbability;
         }
 
         private double CalculateUtility(House house, double movementCost)

@@ -6,6 +6,7 @@
         public double InterestRate { get; private set; }
         private const double MaxLoanToValueRatio = 0.9; // 90% LTV
         private const double MaxDebtToIncomeRatio = 3.0;
+        private const double MinDownPaymentPercentage = 0.20; // 20% minimum down payment
 
         public Bank(double initialInterestRate)
         {
@@ -29,7 +30,11 @@
             if (loanToValueRatio > MaxLoanToValueRatio)
                 return false;
 
-            if (household.TotalIncome < MaxDebtToIncomeRatio * monthlyPayment * 12)
+            if (downPayment < housePrice * MinDownPaymentPercentage)
+                return false;
+
+            // Using annual income
+            if (loanAmount > household.TotalIncome * MaxDebtToIncomeRatio)
                 return false;
 
             household.LoanAmount = loanAmount;
@@ -37,7 +42,6 @@
             MortgagedHouseholds.Add(household);
             return true;
         }
-
         public void CollectPayments()
         {
             List<Household> defaultedHouseholds = new List<Household>();
